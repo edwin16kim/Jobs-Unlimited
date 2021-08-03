@@ -4,86 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Jobs-Unlimited</title>
 </head>
-<body>
+<body class="container">
     <!-- The header section-->
-    <section id="header">
-        <div id="menu">
-
+    <section id="header" class="row p-3">
+        <div id="menu" class="col-sm">
+            menu
         </div>
-        <div id="logo">
-
+        <div id="logo" class="col-sm">
+            Logo
         </div>
-        <div>
+        <div class="col-sm">
             <p>JOBS UNLIMITED</p>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="col-sm"> icon </div>
+        <div class="col-sm">icon</div>
+        <div class="col-sm">icon</div>
     </section>
     <!-- banner section-->
-    <section>
-        <p>Get yourself the job you have been dreaming of</p>
+    <section id="banner">
+        <p class="text-center pt-5">Get yourself the job you have</br> been dreaming of</p>
     </section>
 
     <!-- What we do section-->
     <section>
-        <p>How Jobs Unlimited Works</p>
-        <div>
-            <div>
+        <p id="limit">How Jobs Unlimited Works</p>
+        <div class="row">
+            <div class="col-sm">
                 <p>Find the most suitable job for you</p>
             </div>
-            <div>
-                <p>Research on the company offerig the space</p>
+            <div class="col-sm">
+                <p>Research on the company offering the space</p>
             </div>
-            <div>
+            <div class="col-sm">
                 <p>Apply for the job</p>
             </div>
         </div>
     </section>
 
     <!-- sign up and sign sections -->
-    <section>
-        <div>
+    <section id="sign">
+        <div class="sign">
             <!-- sign in form -->
             <p>Sign in to view available positions</p>
-            <form action="">
-                <label for="">Username*</br>
-                <input type="text"></br>
-                </label>
-                <label for="">Password*</br>
-                <input type="password"></br>
-                </label>
-                <input type="button" value="sign in">
-                <p>or</p>
-                <input type="button" value="Create Account">
+            <form action="" id="signIn">
+                <div id="signedIn">
+                    <div class="form-group">
+                    <label for="">Username*</label>  
+                    <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password*</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="sign in">
+                        <input type="button" value="create account">
+                    </div>
+                </div>
             </form>
         </div>
+       <!--sign up form-->
         <div>
-            <!-- sighn up form -->
             <p>Create an account</p>
-            <form action="">
-                <label for="">Name*</br>
-                <input type="text"></br>
-                </label>
-                <label for="">Username*</br>
-                <input type="text"></br>
-                </label>
-                <label for="">Email*</br>
-                <input type="email"></br>
-                </label>
-                <label for="">Password*</br>
-                <input type="password"></br>
-                </label>
-                <label for="">Confirm Password*</br>
-                <input type="password"></br>
-                </label>
-                <input type="button" value="create">
+            <form action="" id="signUp">
+                <div id="signedUp">
+                    <div class="form-group">
+                        <label for="">Name*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Username*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email*</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password*</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Confirm Password*</label>
+                        <input type="password" class="form-control">
+                    </div>
+                        <input type="button" value="create">
+                </div>
             </form>
         </div>
     </section>
@@ -112,4 +125,5 @@
         </div>
     </section>
 </body>
+<script src="./js/script.js"></script>
 </html>

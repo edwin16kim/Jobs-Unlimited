@@ -1,3 +1,24 @@
 #header{
     background-color: #C4C4C4;
 }
+#banner{
+    height: 55vh;
+    /* background-image: url("../Assets/office2.webp"); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-size: 32px;
+}
+#limit{
+    font-size: xx-large;
+}
+#sign{
+    width: 25%;
+    margin: auto;
+}
+#signIn, #signUp{
+    border: 1px solid grey;
+    background-color: #C4C4C4;
+}
+#signedIn, #signedUp{
+    padding: 50px;
+}
