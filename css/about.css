@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+}
+.jumbotro{
+    background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255,255,255,0.5)), url("../Assets/priscilla-du-preez-NjirplnVra8-unsplash.jpg");
+    background-size: cover;
+    -ms-transform: skewY(4deg);
+    -webkit-transform:skewY(4deg);
+    transform: skewY(4deg);
+}
+.jumbotronn{
+    background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255,255,255,0.5)), url(../Assets/icons8-team-m0oSTE_MjsI-unsplash.jpg);
+    height: 50vh;
+    -ms-transform: skewY(4deg);
+    -webkit-transform:skewY(4deg);
+    transform: skewY(4deg);
+}
+.align{
+    -ms-transform: skewY(-4deg);
+    -webkit-transform:skewY(-4deg);
+    transform: skewY(-4deg);
+    padding-top: 100px; 
+}
+.head{
+    -ms-transform: skewY(-4deg);
+    -webkit-transform:skewY(-4deg);
+    transform: skewY(-4deg);
+    
+}
+.head2{
+     padding-top: 200px;
+    -ms-transform: skewY(4deg);
+    -webkit-transform:skewY(4deg);
+    transform: skewY(4deg);
+}
