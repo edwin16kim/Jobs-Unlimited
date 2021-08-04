@@ -6,6 +6,15 @@ body {
     height: 100vw;
 }
 
+.body-overlay{
+    display: none;
+    position: absolute;
+    background: rgba(17, 17, 17, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
 #navbar {
     position: sticky;
     z-index: 3;
@@ -42,7 +51,18 @@ body {
     width: 50px;
     font-size: 35px;
     cursor: pointer;
+}
 
+
+.menu-cancel {
+    display: none;
+    position: absolute;
+    width: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top:20px;
+    margin-left: 230px;
+    z-index: 4;
 }
 
 #navbar-brand {
@@ -53,6 +73,16 @@ body {
     cursor: pointer;
 }
 
+.menu-nav-brand {
+    position: fixed;
+    top: 20px;
+    margin-top:-25px;
+    margin-left: -370px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 4;
+}
+
 #nav-head {
     margin-left: -40px;
 }
@@ -60,6 +90,42 @@ body {
 .nav-icons {
     right: 100px;
     margin-left: 40px;
+}
+
+.menu {
+    position: fixed;
+    display: none;
+    width: 20%;
+    height: 65%;
+    background-color: white;
+    z-index: 4;
+}
+
+.menu ul {
+    list-style: none;
+    z-index: 5;
+    margin-top:110px;
+    margin-left: -46px;
+}
+
+.menu ul li {
+    font-size: 23px;
+    color: black;
+    margin: 70px;
+    cursor: pointer;
+}
+
+#menu-home {
+    font-size: 20px;
+}
+
+#menu-about {
+    font-size: 20px;
+}
+
+#menu-services {
+    font-size: 20px;
+    color: black;
 }
 
 i {
@@ -88,7 +154,7 @@ i {
 }
 
 .ourServices p {
-    width: 900px;
+    width: 1130px;
     font-size: 18px;
     margin: auto;
     text-align: center;

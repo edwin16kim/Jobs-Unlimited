@@ -6,21 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobs Unlimited</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="css/services.css">
 </head>
 
 <body>
+    <div class="body-overlay"></div>
     <header>
         <img src="Assets/services.jpg" alt="laptop header" class="header">
     </header>
 
+    <div class="menu">
+        <i class="bi bi-x-lg cancel menu-cancel" id="cancel"></i>
+        <ul>
+            <li><i class="bi bi-house-fill" id="menu-home"></i>Home</li>
+            <li><i class="bi bi-file-person-fill" id="menu-about"></i>About</li>
+            <li><i class="bi bi-gear-fill" id="menu-services"></i>Services</li>
+            <li><i class="bi bi-telephone-plus-fill"></i>Contact Us</li>
+        </ul>
+    </div>
+
     <nav class="navbar nav-bar" id="navbar">
-        <i class="bi bi-list" id="menu-bar"></i>
-        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand"
-                id="navbar-brand"></a>
+        <i class="bi bi-list bar" id="menu-bar"></i>
+        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-nav-brand" id="navbar-brand"></a>
         <h1 id="nav-head">JOBS UNLIMITED</h1>
         <div class="nav-icons">
             <i class="bi bi-facebook" id="facebook"></i>
@@ -38,8 +47,7 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
