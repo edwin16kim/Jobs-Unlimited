@@ -1,9 +1,10 @@
 $(function(){
    $(window).scroll(function(){
-       if ($(this).scrollTop() > 100){
-           $("#navbar").addClass("navbar-scroll").css("margin-top", "-20px");
+       if ($(this).scrollTop() > 80){
+        $(".nav-bar").removeAttr("id");
+           $(".nav-bar").addClass("navbar-scroll").css("margin-top", "-20px");
        }
 
-       else ($("#navbar").removeClass("navbar-scroll"))
+       else ($(".nav-bar").removeClass("navbar-scroll"))
    })
 })
