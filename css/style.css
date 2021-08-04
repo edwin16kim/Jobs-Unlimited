@@ -1,6 +1,9 @@
 /* #header{
     background-color: #C4C4C4;
 } */
+*{
+    overflow-x: hidden;
+}
 #navbar{
     position: sticky;
     z-index: 3;
@@ -62,10 +65,14 @@ i{
 #limit{
     font-size: xx-large;
 }
-.cards :hover{
-box-shadow: #C4C4C4;
+.find:hover{
+    box-shadow: 5px 5px 7px 5px rgb(125, 125, 245);
+    /* box-shadow: 20px 20px 10px rgb(125, 125, 245); */
 }
 @media only screen and (max-width: 601px){
+    *{
+        overflow-x: hidden;
+    }
     #banner{
         height: 250px;
         font-size: 28px;
@@ -74,12 +81,24 @@ box-shadow: #C4C4C4;
         font-size: 23px;
     }
     #available{
-        font-size: 25px;
+        font-size: 23px;
+    }
+    form{
+        width: 400px;
+        margin: auto;
+    }
+    #signIn, #signUp{
+        width: 300px;
+    }
+    #sign{
+        width: unset;
     }
 }
-#sign{
-    width: 70vh;
-    margin: auto;
+@media only screen and (min-width: 602px){
+    #sign{
+        width: 700px;
+        margin: auto;
+    }
 }
 #signIn, #signUp{
     border: 1px solid grey;
