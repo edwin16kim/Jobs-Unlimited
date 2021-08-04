@@ -184,6 +184,13 @@ i {
     margin-top: 5px;
 }
 
+#form-error2 {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 #submitFiles {
     display: none;
     font-size: 18px;
@@ -191,4 +198,58 @@ i {
     height: 35px;
     margin-top: 20px;
     margin-left: 790px;
+}
+
+.jobs-section {
+    margin-top: 100px;
+}
+
+.jobs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jobs2{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 60px;
+}
+
+.apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: lightgrey;
+}
+
+.job-types {
+    font-size: 19px;
+}
+
+.job-location {
+    font-size: 18px;
+}
+
+.job-btns {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+
+.job-btns:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+#sales-rep {
+    width: 250px;
+    text-align: center;
 }

@@ -33,18 +33,27 @@ $(function () {
 
     $("#form").submit(function (event) {
         event.preventDefault();
-        
-        if ($("#input-file").val() === "") {
+
+        if (($("#input-file").val() === "") || ($("#input-file")[0].files.length < 2)) {
+            $("#form-error2").hide();
             $("#form-error").slideDown();
+            return false;
+        }
+        else if  ($("#input-file")[0].files.length > 2) {
+            $("#form-error").hide();
+            $("#form-error2").slideDown();
+            return false;
         }
 
-        else {
+         else {
             alert("Thanks you for submitting your documents,we'll get back to you after we've reviewed them.");
             $("#submitFiles").prop("disabled", true).css("cursor", "not-allowed")
             $("#form-error").slideUp();
+            $("#form-error2").slideUp();
             $("#input-file").slideUp();
-        $("#submitFiles").slideUp();
+            $("#submitFiles").slideUp();
             $("#form").trigger("reset");
+            return true;
         }
     })
 })
