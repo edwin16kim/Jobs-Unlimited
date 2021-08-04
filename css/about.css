@@ -34,7 +34,7 @@ body{
     -webkit-transform:skewY(4deg);
     transform: skewY(4deg);
 }
-.font{
+.font, .head1{
     font-size: 30px;
 }
 #navbar{
