@@ -1,9 +1,60 @@
-#header{
+/* #header{
     background-color: #C4C4C4;
+} */
+#navbar{
+    position: sticky;
+    z-index: 3;
+    width: 100%;
+    height: 95px;
+    margin-top: -20px;
+    background-color: transparent;
+}
+.navbar-scroll{
+    position: sticky;
+    z-index: 3;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    top: -20px;
+    box-shadow: 2px 2px 7px;
+    transition: all ease-in-out 0.5s;
+    animation: scroll .4s;
+}
+@keyframes scroll{
+    from {
+        height: 0;
+    }
+    to {
+        height: 90px;
+    }
+}
+#menu-bar{
+    width: 50px;
+    font-size: 35px;
+    cursor: pointer;
+}
+#navbar-brand{
+    position: absolute;
+    top: 20px;
+    margin-left: -200px;
+    width: 50px;
+    cursor: pointer;
+}
+#nav-head{
+    margin-left: -40px;
+}
+.nav-icons{
+    right: 100px;
+    margin-left: 40px;
+}
+i{
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
 }
 #banner{
     height: 55vh;
-    /* background-image: url("../Assets/office2.webp"); */
+    background-image: url("../Assets/secretary-338561__340.webp");
     background-size: cover;
     /* background-repeat: no-repeat; */
     font-size: 32px;
@@ -11,8 +62,23 @@
 #limit{
     font-size: xx-large;
 }
+.cards :hover{
+box-shadow: #C4C4C4;
+}
+@media only screen and (max-width: 601px){
+    #banner{
+        height: 250px;
+        font-size: 28px;
+    }
+    #limit{
+        font-size: 23px;
+    }
+    #available{
+        font-size: 25px;
+    }
+}
 #sign{
-    width: 25%;
+    width: 70vh;
     margin: auto;
 }
 #signIn, #signUp{
@@ -20,5 +86,14 @@
     background-color: #C4C4C4;
 }
 #signedIn, #signedUp{
-    padding: 50px;
+    padding: 40px;
+}
+#available{
+    font-size: xx-large;
+}
+#jobsView{
+    margin: auto;
+}
+#footer{
+    background-color: #C4C4C4;
 }
