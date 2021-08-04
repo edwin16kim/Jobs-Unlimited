@@ -19,29 +19,59 @@
         <i class="bi bi-x-lg" id="jobsHide"></i>
         <h2 class="postjobs-head">Post job</h2>
         <div class="form-group" id="form-group">
-            <label for="Requirements">Job company*</label>
+            <label for="Job company">Job company*</label>
             <input type="text" name="company" placeholder="Enter job company" class="form-inputs"
-                id="forminput-company">
+                id="forminput-company" required>
         </div>
         <div class="form-group" id="form-group1">
             <label for="type of job">Type of job*</label>
-            <input type="text" name="Type" placeholder="Enter type of job" class="form-inputs" id="">
+            <input type="text" name="Type" placeholder="Enter type of job" class="form-inputs" id="" required>
         </div>
         <div class="form-group" id="form-group2">
             <label for="location">Location*</label>
-            <input type="text" name="Location" placeholder="Enter location" class="form-inputs" id="">
+            <input type="text" name="Location" placeholder="Enter location" class="form-inputs" id="" required>
         </div>
         <div class="form-group" id="form-group3">
             <label for="Requirements">Requirements*</label>
-            <input type="text" name="Requirements" placeholder="Enter requirements" class="form-inputs" id="">
+            <input type="text" name="Requirements" placeholder="Enter requirements" class="form-inputs" id="" required>
         </div>
         <div class="form-group" id="form-group4">
             <label for="Salary">Salary(Kshs)*</label>
-            <input type="number" name="Salary" placeholder="Enter salary" class="form-inputs" id="">
+            <input type="number" name="Salary" placeholder="Enter salary" class="form-inputs" id="" required>
         </div>
         <input type="submit" value="submit" id="submit-jobs">
     </form>
 
+    <form class="apply-form">
+        <i class="bi bi-x-lg" id="applyHide"></i>
+        <h2 class="postjobs-head">Apply for job</h2>
+        <div class="form-group" id="formgroup">
+            <label for="name">Name*</label>
+            <input type="text" name="username" placeholder="Enter your name" class="apply-form-inputs"
+                id="form-input-name" required>
+        </div>
+        <div class="form-group" id="formgroup1">
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="Enter your email" class="apply-form-inputs" id="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+        </div>
+        <div class="form-group" id="formgroup2">
+            <label for="Age">Age*</label>
+            <input type="number" name="Age" placeholder="Enter your age" class="apply-form-inputs" id="" required>
+        </div>
+        <div class="form-group" id="formgroup3">
+            <label for="gender">Gender*</label>
+            <select class="apply-form-inputs" required>
+            <option value="" disabled selected>Select</option>
+            <option >Male</option>
+            <option >Female</option>
+            </select>
+        </div>
+        <div class="form-group" id="formgroup4">
+            <label for="location">Location*</label>
+            <input type="text" name="Location" placeholder="Enter location" class="apply-form-inputs" id="" required>
+        </div>
+        <input type="submit" value="submit" id="submit-application">
+    </form>
 
     <div class="body-overlay"></div>
     <header>

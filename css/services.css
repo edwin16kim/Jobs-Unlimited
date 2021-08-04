@@ -366,3 +366,45 @@ i {
 #submit-jobs:hover {
     background-color: rgb(252, 248, 248);
 }
+
+.apply-form {
+    position: fixed;
+    display: none;
+    background-color: white;
+    top: 10%;
+    left: 35%;
+    width: 30%;
+    height: 83%;
+    padding: 30px;
+    box-shadow: 2px 2px 7px;
+    z-index: 5;
+}
+
+#applyHide {
+    position: absolute;
+    margin-top: -40px;
+    right: 0;
+    font-size: 18px;
+}
+
+.apply-form-inputs {
+    width: 390px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+}
+
+#submit-application {
+    display: block;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+    color: black;
+    margin: auto;
+    margin-top: 30px;
+    width: 120px;
+    height: 40px;
+}

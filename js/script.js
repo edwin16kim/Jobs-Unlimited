@@ -55,6 +55,37 @@ $(function () {
         }
     })
 
+    // Apply jobs form
+    $("#submit-application").focus(function () {
+        $(this).css("background-color", "lightgrey");
+    })
+
+    $(".apply-form").submit(function (event) {
+        event.preventDefault();
+
+        if ($(".apply-form-inputs").val() === "") {
+            $(".apply-form-inputs").css("border", "1px solid red");
+            $("#form-input-name").focus();
+            return false;
+        } else {
+            alert("Thank you for applying.We,ll reach up to you shortly");
+            $(".apply-form-inputs").css("border", "1px solid black");
+            $("#submit-application").css("background-color", "transparent")
+            $(".apply-form").trigger("reset");
+            return true;
+        }
+    })
+
+    $(".job-btns").click(function () {
+        $(".apply-form").fadeIn();
+        $(".body-overlay").fadeIn();
+    })
+
+    $("#applyHide").click(function () {
+        $(".apply-form").fadeOut();
+        $(".body-overlay").fadeOut();
+    })
+
     // Post jobs form
     $("#submit-jobs").focus(function () {
         $(this).css("background-color", "lightgrey");
@@ -64,12 +95,10 @@ $(function () {
         event.preventDefault();
 
         if ($(".form-inputs").val() === "") {
-            $(".form-inputs").css("border", "1px solid red");
-            $("#forminput-company").focus();
+            
             return false;
         } else {
             alert("Thank you! Your job was posted");
-            $(".form-inputs").css("border", "1px solid black");
             $("#submit-jobs").css("background-color", "transparent")
             $(".jobs-form").trigger("reset");
             return true;
