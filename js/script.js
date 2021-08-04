@@ -1,3 +1,4 @@
+// navbar sticky position
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 80) {
@@ -7,7 +8,7 @@ $(function () {
             $(".nav-bar").removeClass("navbar-scroll")
         }
     })
-
+    //  Navigation menu
     $("#menu-bar").click(function () {
         $(".menu").slideDown();
         $(".nav-nav-brand").removeAttr("id");
@@ -25,7 +26,7 @@ $(function () {
         $(".menu-cancel").fadeOut();
         $(".body-overlay").fadeOut();
     })
-
+    // Input [type = file]
     $("#displayFile").click(function () {
         $("#input-file").slideDown();
         $("#submitFiles").slideDown();
@@ -38,14 +39,11 @@ $(function () {
             $("#form-error2").hide();
             $("#form-error").slideDown();
             return false;
-        }
-        else if  ($("#input-file")[0].files.length > 2) {
+        } else if ($("#input-file")[0].files.length > 2) {
             $("#form-error").hide();
             $("#form-error2").slideDown();
             return false;
-        }
-
-         else {
+        } else {
             alert("Thanks you for submitting your documents,we'll get back to you after we've reviewed them.");
             $("#submitFiles").prop("disabled", true).css("cursor", "not-allowed")
             $("#form-error").slideUp();
@@ -55,5 +53,36 @@ $(function () {
             $("#form").trigger("reset");
             return true;
         }
+    })
+
+    // Post jobs form
+    $("#submit-jobs").focus(function () {
+        $(this).css("background-color", "lightgrey");
+    })
+
+    $(".jobs-form").submit(function (event) {
+        event.preventDefault();
+
+        if ($(".form-inputs").val() === "") {
+            $(".form-inputs").css("border", "1px solid red");
+            $("#forminput-company").focus();
+            return false;
+        } else {
+            alert("Thank you! Your job was posted");
+            $(".form-inputs").css("border", "1px solid black");
+            $("#submit-jobs").css("background-color", "transparent")
+            $(".jobs-form").trigger("reset");
+            return true;
+        }
+    })
+
+    $(".post-btn").click(function () {
+        $(".jobs-form").fadeIn();
+        $(".body-overlay").fadeIn();
+    })
+
+    $("#jobsHide").click(function () {
+        $(".jobs-form").fadeOut();
+        $(".body-overlay").fadeOut();
     })
 })
