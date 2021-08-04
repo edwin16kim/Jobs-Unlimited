@@ -10,9 +10,28 @@ $(document).ready(function(){
 // Businness logic
 
 $(document).ready(function(){
+    //header
+    $(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 80){
+             $(".nav-bar").removeAttr("id");
+                $(".nav-bar").addClass("navbar-scroll").css("margin-top", "-20px");
+            }
+            else ($(".nav-bar").removeClass("navbar-scroll"))
+        })
+     })
+    // On clicking the sign in button
+    $("#enter").click(function(){
+        var personName = $("#userName").val();
+        if(personName == ""){
+            alert("Please enter Username");
+        }
+        else{
+            alert("success");
+        }
+    })
     // create account button to show sign up form and hide sign in form
-    $("#newAccount").click(function(event){
-        event.preventDefault();
+    $("#newAccount").click(function(){
         $(".signUp").show(500);
         $(".sign").hide();
     })
