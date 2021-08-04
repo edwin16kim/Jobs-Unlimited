@@ -1,12 +1,12 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     height: 100vw;
 }
 
-#navbar{
+#navbar {
     position: sticky;
     z-index: 3;
     width: 100%;
@@ -15,7 +15,7 @@ body{
     background-color: transparent;
 }
 
-.navbar-scroll{
+.navbar-scroll {
     position: sticky;
     z-index: 3;
     width: 100%;
@@ -25,10 +25,10 @@ body{
     box-shadow: 2px 2px 7px;
     transition: all ease-in-out 0.5s;
     animation: scroll .4s;
-  
+
 }
 
-@keyframes scroll{
+@keyframes scroll {
     from {
         height: 0;
     }
@@ -38,14 +38,14 @@ body{
     }
 }
 
-#menu-bar{
+#menu-bar {
     width: 50px;
     font-size: 35px;
     cursor: pointer;
-   
+
 }
 
-#navbar-brand{
+#navbar-brand {
     position: absolute;
     top: 20px;
     margin-left: -200px;
@@ -53,22 +53,22 @@ body{
     cursor: pointer;
 }
 
-#nav-head{
+#nav-head {
     margin-left: -40px;
 }
 
-.nav-icons{
+.nav-icons {
     right: 100px;
     margin-left: 40px;
 }
 
-i{
+i {
     font-size: 14px;
     padding: 20px;
     cursor: pointer;
 }
 
-.header{
+.header {
     position: absolute;
     width: 100%;
     height: 500px;
@@ -77,17 +77,17 @@ i{
     opacity: 0.8;
 }
 
-.ourServices{
+.ourServices {
     position: relative;
     top: 430px;
 }
 
-.ourServices h2{
+.ourServices h2 {
     text-align: center;
     font-size: 32px;
 }
 
-.ourServices p{
+.ourServices p {
     width: 900px;
     font-size: 18px;
     margin: auto;
@@ -95,6 +95,6 @@ i{
     letter-spacing: 0.1em;
 }
 
-#second-p{
+#second-p {
     margin-top: 30px;
 }
