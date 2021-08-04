@@ -18,18 +18,19 @@
     </header>
 
     <div class="menu">
+        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-nav-brand" id="menu-nav-brand"></a>
         <i class="bi bi-x-lg cancel menu-cancel" id="cancel"></i>
         <ul>
-            <li><i class="bi bi-house-fill" id="menu-home"></i>Home</li>
-            <li><i class="bi bi-file-person-fill" id="menu-about"></i>About</li>
-            <li><i class="bi bi-gear-fill" id="menu-services"></i>Services</li>
-            <li><i class="bi bi-telephone-plus-fill"></i>Contact Us</li>
+           <a href="index.html"><li><i class="bi bi-house-fill" id="menu-home"></i>Home</li></a>
+           <a href="about.html"><li><i class="bi bi-file-person-fill" id="menu-about"></i>About</li></a>
+           <a href="services.html"><li><i class="bi bi-gear-fill" id="menu-services"></i>Services</li></a>
+           <a href="contact.html"><li><i class="bi bi-telephone-plus-fill"></i>Contact Us</li></a>
         </ul>
     </div>
 
     <nav class="navbar nav-bar" id="navbar">
         <i class="bi bi-list bar" id="menu-bar"></i>
-        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-nav-brand" id="navbar-brand"></a>
+        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-bar-brand" id="navbar-brand"></a>
         <h1 id="nav-head">JOBS UNLIMITED</h1>
         <div class="nav-icons">
             <i class="bi bi-facebook" id="facebook"></i>
@@ -43,7 +44,12 @@
         <p>We provide opportunities for both manual and casual jobs.Unlike manual jobs,some casual jobs require
             you to have necessary skills required by the employer.
         </p>
-        <p id="second-p">Are you interested in casual jobs?Click <a href="">here</a> to upload your documents.</p>
+        <p id="second-p">Are you interested in casual jobs?Click <a href="#input-file" id="displayFile">here</a> to upload your high school certificate and national identity card.</p>
+        <form id="form">
+        <input type="file" name="file" id="input-file" accept=".doc, .pdf">
+        <p id="form-error">This field is required</p>
+        <input type="submit" value="submit" id="submitFiles">
+        </form>
     </div>
 
 

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: 100vw;
+    height: 100%;
 }
 
 .body-overlay{
@@ -53,6 +53,13 @@ body {
     cursor: pointer;
 }
 
+#navbar-brand {
+    position: absolute;
+    top: 20px;
+    margin-left: -200px;
+    width: 50px;
+    cursor: pointer;
+}
 
 .menu-cancel {
     display: none;
@@ -65,19 +72,12 @@ body {
     z-index: 4;
 }
 
-#navbar-brand {
-    position: absolute;
-    top: 20px;
-    margin-left: -200px;
-    width: 50px;
-    cursor: pointer;
-}
 
 .menu-nav-brand {
     position: fixed;
-    top: 20px;
-    margin-top:-25px;
-    margin-left: -370px;
+    top: 5px;
+    margin-top: 4px;
+    margin-left: 10px;
     width: 50px;
     cursor: pointer;
     z-index: 4;
@@ -107,6 +107,10 @@ body {
     margin-top:110px;
     margin-left: -46px;
 }
+
+.menu ul a {
+    color: black;
+} 
 
 .menu ul li {
     font-size: 23px;
@@ -146,6 +150,7 @@ i {
 .ourServices {
     position: relative;
     top: 430px;
+    margin: auto;
 }
 
 .ourServices h2 {
@@ -163,4 +168,27 @@ i {
 
 #second-p {
     margin-top: 30px;
+    width: 1000px;
+}
+
+#input-file {
+    display: none;
+    margin-top: 20px;
+    margin-left: 700px;
+}
+
+#form-error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#submitFiles {
+    display: none;
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 790px;
 }
