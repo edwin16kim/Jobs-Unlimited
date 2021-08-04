@@ -95,7 +95,7 @@ $(function () {
         event.preventDefault();
 
         if ($(".form-inputs").val() === "") {
-            
+
             return false;
         } else {
             alert("Thank you! Your job was posted");
