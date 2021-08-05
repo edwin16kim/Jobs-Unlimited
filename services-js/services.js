@@ -72,6 +72,8 @@ $(function () {
             $(".apply-form-inputs").css("border", "1px solid black");
             $("#submit-application").css("background-color", "transparent")
             $(".apply-form").trigger("reset");
+            $(".apply-form").fadeOut();
+            $(".body-overlay").fadeOut();
             return true;
         }
     })

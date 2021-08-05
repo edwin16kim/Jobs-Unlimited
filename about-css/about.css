@@ -2,6 +2,15 @@ body {
     overflow-x: hidden;
 }
 
+.body-overlay {
+    display: none;
+    position: fixed;
+    background: rgba(17, 17, 17, 0.6);
+    width: 100%;
+    height: 100vw;
+    z-index: 4;
+}
+
 .jumbotro {
     background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255, 255, 255, 0.5)), url("../Assets/priscilla-du-preez-NjirplnVra8-unsplash.jpg");
     background-size: cover;
