@@ -21,3 +21,15 @@ function validate(){
     }else
     alert('Dear '+username+'\n  your message has been received.')
 }
+
+//hiding and showing subscribe form
+$(document).ready(function(){
+    $(".click").click(function(event){
+        event.preventDefault();
+        $("#form2").show();
+    })
+    $("#cancelButton").click(function(event){
+        event.preventDefault();
+        $("#form2").hide();
+    })
+})
