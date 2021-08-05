@@ -175,6 +175,9 @@ textarea{
     justify-content: center;
     align-items: center;
 }
+#form2{
+    display: none;
+}
 
 /* Footer Section */
 #footer{
