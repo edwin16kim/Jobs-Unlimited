@@ -101,3 +101,32 @@ i{
     padding: 20px;
     cursor: pointer;
 }
+
+/* Contact Section */
+.contact{
+    padding: 2%;
+    background-color:#C4C4C4; 
+    color: black;
+    font-size: larger;
+    border-radius: 4px solid ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#sub1{
+    padding: 15px;
+    margin-top: 8px;
+    background-color:#3C403D;
+    width: 30%;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+#sub1:hover{
+    background-color:  #ffa8B6;
+}
+textarea{
+    margin: 1%;
+}
