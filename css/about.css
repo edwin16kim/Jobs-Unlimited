@@ -1,43 +1,53 @@
-body{
+body {
     overflow-x: hidden;
 }
-.jumbotro{
-    background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255,255,255,0.5)), url("../Assets/priscilla-du-preez-NjirplnVra8-unsplash.jpg");
+
+.jumbotro {
+    background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255, 255, 255, 0.5)), url("../Assets/priscilla-du-preez-NjirplnVra8-unsplash.jpg");
     background-size: cover;
+    background-attachment: fixed;
     /* padding-top: 60%; */
     -ms-transform: skewY(3deg);
-    -webkit-transform:skewY(3deg);
+    -webkit-transform: skewY(3deg);
     transform: skewY(3deg);
 }
-  .jumbotronn{
-    background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255,255,255,0.5)), url(../Assets/icons8-team-m0oSTE_MjsI-unsplash.jpg);
+
+.jumbotronn {
+    background-image: linear-gradient(rgba(7, 6, 6, 0.877), rgba(255, 255, 255, 0.5)), url(../Assets/icons8-team-m0oSTE_MjsI-unsplash.jpg);
     height: 50vh;
+    background-attachment: fixed;
     -ms-transform: skewY(4deg);
-    -webkit-transform:skewY(4deg);
-    transform: skewY(4deg);
-} 
- .align{
-    -ms-transform: skewY(-4deg);
-    -webkit-transform:skewY(-4deg);
-    transform: skewY(-4deg);
-    padding-top: 100px; 
-}
-.head{
-    -ms-transform: skewY(-4deg);
-    -webkit-transform:skewY(-4deg);
-    transform: skewY(-4deg);
-    
-}
-.head2{
-     padding-top: 200px;
-    -ms-transform: skewY(4deg);
-    -webkit-transform:skewY(4deg);
+    -webkit-transform: skewY(4deg);
     transform: skewY(4deg);
 }
-.font, .head1{
+
+.align {
+    -ms-transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    padding-top: 100px;
+}
+
+.head {
+    -ms-transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+
+}
+
+.head2 {
+    padding-top: 200px;
+    -ms-transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+}
+
+.font,
+.head1 {
     font-size: 30px;
 }
-#navbar{
+
+#navbar {
     position: sticky;
     z-index: 3;
     width: 100%;
@@ -45,7 +55,8 @@ body{
     margin-top: -20px;
     background-color: transparent;
 }
-.navbar-scroll{
+
+.navbar-scroll {
     position: sticky;
     z-index: 3;
     width: 100%;
@@ -56,48 +67,57 @@ body{
     transition: all ease-in-out 0.5s;
     animation: scroll .4s;
 }
-@keyframes scroll{
+
+@keyframes scroll {
     from {
         height: 0;
     }
+
     to {
         height: 90px;
     }
 }
-#menu-bar{
+
+#menu-bar {
     width: 50px;
     font-size: 35px;
     cursor: pointer;
 }
-#navbar-brand{
+
+#navbar-brand {
     position: absolute;
     top: 20px;
     margin-left: -200px;
     width: 50px;
     cursor: pointer;
 }
-#nav-head{
+
+#nav-head {
     margin-left: -40px;
 }
-.nav-icons{
+
+.nav-icons {
     right: 100px;
     margin-left: 40px;
 }
-i{
+
+i {
     font-size: 14px;
     padding: 20px;
     cursor: pointer;
 }
+
 .menu-cancel {
     display: none;
     position: absolute;
     width: 50px;
     font-size: 25px;
     cursor: pointer;
-    margin-top:20px;
+    margin-top: 20px;
     margin-left: 230px;
     z-index: 4;
 }
+
 .menu-nav-brand {
     position: fixed;
     top: 5px;
@@ -107,6 +127,7 @@ i{
     cursor: pointer;
     z-index: 4;
 }
+
 .menu {
     position: fixed;
     display: none;
@@ -115,32 +136,39 @@ i{
     background-color: white;
     z-index: 4;
 }
+
 .menu ul {
     list-style: none;
     z-index: 5;
-    margin-top:110px;
+    margin-top: 110px;
     margin-left: -46px;
 }
+
 .menu ul a {
     color: black;
 }
+
 .menu ul li {
     font-size: 23px;
     color: black;
     margin: 70px;
     cursor: pointer;
 }
+
 #menu-home {
     font-size: 20px;
 }
+
 #menu-about {
     font-size: 20px;
 }
+
 #menu-services {
     font-size: 20px;
     color: black;
 }
-#footer{
+
+#footer {
     background-color: #C4C4C4;
     padding-top: 50px;
-} 
+}
