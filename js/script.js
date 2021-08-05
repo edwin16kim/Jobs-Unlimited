@@ -78,6 +78,7 @@ $(function () {
 
     $(".job-btns").click(function () {
         $(".apply-form").fadeIn();
+        $("#form-input-name").focus();
         $(".body-overlay").fadeIn();
     })
 
@@ -91,22 +92,32 @@ $(function () {
         $(this).css("background-color", "lightgrey");
     })
 
+    $(".jobs3").hide();
+
     $(".jobs-form").submit(function (event) {
+        var apply2 = document.getElementsByClassName("apply2");
+        var typeOfJob = document.getElementById("typeOfJob").value;
+        var locationOfJob = document.getElementById("locationOfJob").value;
         event.preventDefault();
 
         if ($(".form-inputs").val() === "") {
-
             return false;
         } else {
             alert("Thank you! Your job was posted");
-            $("#submit-jobs").css("background-color", "transparent")
+            $("#submit-jobs").css("background-color", "transparent");
+            $(".jobs3").fadeIn();
+            $(".work").html(typeOfJob);
+            $(".work-loc").html(locationOfJob);
             $(".jobs-form").trigger("reset");
+            $(".body-overlay").fadeOut();
+            $(".jobs-form").fadeOut();
             return true;
         }
     })
 
     $(".post-btn").click(function () {
         $(".jobs-form").fadeIn();
+        $("#forminput-company").focus();
         $(".body-overlay").fadeIn();
     })
 
