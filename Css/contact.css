@@ -130,3 +130,48 @@ i{
 textarea{
     margin: 1%;
 }
+
+/* Subscribe Section */
+.click{
+    color: blue;
+}
+.click:hover{
+    text-decoration: underline;
+}
+.subscribe{
+    margin-top: 1%;
+    background-color: #C4C4C4; 
+    padding: 2%; 
+    font-size: large;
+}
+.radiobutton{
+    margin: 1%;
+}
+.subscribe p{
+    font-size: larger
+}
+#cribe{
+    padding: 15px;
+    margin-top: 8px;
+    background-color:#3C403D;
+    width: 30%;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px; 
+}
+#cancelButton{
+    background-color: red;
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.sub-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
