@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#available, #jobsView, .card").addClass("text-center");
     $("#copyright").addClass("text-center");
     $(".buttons").addClass("text-center");
-    // $(".signUp").hide();
+    $(".signUp").hide();
 })
 
 // Businness logic
@@ -21,15 +21,15 @@ $(document).ready(function(){
         })
      })
     // On clicking the sign in button
-    // $("#enter").click(function(){
-    //     var personName = $("#userName").val();
-    //     if(personName == ""){
-    //         alert("Please enter Username");
-    //     }
-    //     else{
-    //         return true;
-    //     }
-    // })
+    $("#enter").click(function(){
+        var personName = $("#userName").val();
+        if(personName == ""){
+            alert("Please enter Username");
+        }
+        else{
+            return true;
+        }
+    })
     // create account button to show sign up form and hide sign in form
     $("#newAccount").click(function(){
         $(".signUp").show(500);
