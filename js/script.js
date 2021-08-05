@@ -3,8 +3,8 @@ $(document).ready(function(){
     $("#limit").addClass("text-center");
     $("#available, #jobsView, .card").addClass("text-center");
     $("#copyright").addClass("text-center");
-    $(".buttons").addClass("text-center");
-    $(".signUp").hide();
+    $(".buttons, .failed").addClass("text-center");
+    $(".signUp, .failed").hide();
 })
 
 // Businness logic
@@ -50,7 +50,7 @@ $(document).ready(function(){
             alert("Please fill the input fields")
         }
         else{
-            alert("login failed");
+            $(".failed").show();
         }
     })
     // create account button to show sign up form and hide sign in form
