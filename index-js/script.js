@@ -1,5 +1,5 @@
 // user interface
-$(document).ready(function(){
+$(document).ready(function () {
     $("#limit").addClass("text-center");
     $("#available, #jobsView, .card").addClass("text-center");
     $("#copyright, .confirm").addClass("text-center");
@@ -9,17 +9,16 @@ $(document).ready(function(){
 })
 
 // Businness logic
-$(document).ready(function(){
+$(document).ready(function () {
     // The navigation bar
-    $(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 80){
-             $(".nav-bar").removeAttr("id");
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 80) {
+                $(".nav-bar").removeAttr("id");
                 $(".nav-bar").addClass("navbar-scroll").css("margin-top", "-20px");
-            }
-            else ($(".nav-bar").removeClass("navbar-scroll"))
+            } else($(".nav-bar").removeClass("navbar-scroll"))
         })
-        $("#menu-bar").click(function(){
+        $("#menu-bar").click(function () {
             $(".menu").slideDown();
             $(".nav-nav-brand").removeAttr("id");
             $(".nav-nav-brand").addClass("menu-nav-brand");
@@ -27,7 +26,7 @@ $(document).ready(function(){
             $(".menu-cancel").fadeIn();
             $(".body-overlay").fadeIn();
         })
-        $(".menu-cancel").click(function(){
+        $(".menu-cancel").click(function () {
             $(".menu").slideUp();
             $(".nav-nav-brand").removeClass("menu-nav-brand");
             $(".nav-nav-brand").attr("id", "navbar-brand");
@@ -37,91 +36,80 @@ $(document).ready(function(){
         })
     })
     // validate the sign in button
-    $("#enter").click(function(event){
+    $("#enter").click(function (event) {
         event.preventDefault();
         var userName = $("#userName").val();
         var passWord = $("#passWord").val();
-        if(userName=="admin" && passWord=="user")
-        {
-            document.location.href="services.html";
+        if (userName == "admin" && passWord == "user") {
+            document.location.href = "services.html";
             return true;
-        }
-        else if(userName == "" && passWord == ""){
+        } else if (userName == "" && passWord == "") {
             $(".fill").show(500);
-        }
-        else if(userName == "" && passWord !== ""){
+        } else if (userName == "" && passWord !== "") {
             $(".userEnter").show(500);
-        }
-        else if(passWord == "" && userName !== ""){
+        } else if (passWord == "" && userName !== "") {
             $(".passEnter").show(500);
-        }
-        else{
+        } else {
             $(".failed").show(500);
         }
-        $("#userName").click(function(){
+        $("#userName").click(function () {
             $(".fill").hide(500);
             $(".failed").hide(500);
             $("#userEnter").hide(500);
         })
-        $("#passWord").click(function(){
+        $("#passWord").click(function () {
             $(".failed").hide(500);
             $(".passEnter").hide(500);
             $(".fill").hide(500);
         })
     })
     // Validate the sign up button. create account button
-    $("#create").click(function(){
+    $("#create").click(function () {
         var createName = $("#createName").val();
         var createUser = $("#createUser").val();
         var createEmail = $("#createEmail").val();
         var createPass = $("#createPass").val();
         var createConfirm = $("#createConfirm").val();
-        if(createName == ""){
+        if (createName == "") {
             $("#create1").show(500);
-        }
-        else if(createUser == ""){
+        } else if (createUser == "") {
             $("#create2").show(500);
-        }
-        else if(createEmail == ""){
+        } else if (createEmail == "") {
             $("#create3").show(500);
-        }
-        else if(createPass == ""){
+        } else if (createPass == "") {
             $("#create4").show(500);
-        }
-        else if(createConfirm == ""){
+        } else if (createConfirm == "") {
             $("#create5").show(500);
-        }
-        else if(createPass !== createConfirm){
+        } else if (createPass !== createConfirm) {
             alert("password and confirm password are not the same");
-        }
-        else{
+        } else {
             $(".signUp").hide(500);
             $(".sign").show(500);
             $(".confirm").show(500);
         }
-        $("#createName").click(function(){
+        $("#createName").click(function () {
             $("#create1").hide(500);
         })
-        $("#createUser").click(function(){
+        $("#createUser").click(function () {
             $("#create2").hide(500);
         })
-        $("#createEmail").click(function(){
+        $("#createEmail").click(function () {
             $("#create3").hide(500);
         })
-        $("#createPass").click(function(){
+        $("#createPass").click(function () {
             $("#create4").hide(500);
         })
-        $("#createConfirm").click(function(){
+        $("#createConfirm").click(function () {
             $("#create5").hide(500);
         })
     })
     // create account button to show sign up form and hide sign in form
-    $("#newAccount").click(function(){
+    $("#newAccount").click(function () {
         $(".signUp").show(500);
         $(".sign").hide(500);
     })
     // Returns user to the user sign In form from create new account form
-    $("#logIn").click(function(){
+    $("#logIn").click(function () {
         $(".sign").show(500);
         $(".signUp").hide(500);
     })

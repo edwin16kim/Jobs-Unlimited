@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index-css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="index-css/style.css">
     <title>Jobs-Unlimited</title>
 </head>
+
 <body>
     <!-- The header section-->
     <div class="menu">
-        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-nav-brand" id="menu-nav-brand"></a>
+        <a href="index.html"><img src="Assets/Index-images/nav-brand.png" alt="job search logo"
+                class="navbar-brand nav-nav-brand" id="menu-nav-brand"></a>
         <i class="bi bi-x-lg cancel menu-cancel" id="cancel"></i>
         <ul>
-           <a href="index.html"><li><i class="bi bi-house-fill" id="menu-home"></i>Home</li></a>
-           <a href="about.html"><li><i class="bi bi-file-person-fill" id="menu-about"></i>About</li></a>
-           <a href="services.html"><li><i class="bi bi-gear-fill" id="menu-services"></i>Services</li></a>
-           <a href="contact.html"><li><i class="bi bi-telephone-plus-fill"></i>Contact Us</li></a>
+            <a href="index.html">
+                <li><i class="bi bi-house-fill" id="menu-home"></i>Home</li>
+            </a>
+            <a href="about.html">
+                <li><i class="bi bi-file-person-fill" id="menu-about"></i>About</li>
+            </a>
+            <a href="services.html">
+                <li><i class="bi bi-gear-fill" id="menu-services"></i>Services</li>
+            </a>
+            <a href="contact.html">
+                <li><i class="bi bi-telephone-plus-fill"></i>Contact Us</li>
+            </a>
         </ul>
     </div>
     <nav class="navbar nav-bar" id="navbar">
         <i class="bi bi-list bar" id="menu-bar"></i>
-        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-bar-brand" id="navbar-brand"></a>
+        <a href="index.html"><img src="Assets/Index-images/nav-brand.png" alt="job search logo"
+                class="navbar-brand nav-bar-brand" id="navbar-brand"></a>
         <h1 id="nav-head">JOBS UNLIMITED</h1>
         <div class="nav-icons">
             <i class="bi bi-facebook" id="facebook"></i>
@@ -47,7 +59,8 @@
             <div class="card-group">
                 <div class="col-sm-4">
                     <div class="find card p-3 mb-1">
-                        <img src="./Assets/SVGs/undraw_File_searching_re_3evy.svg" alt="" style="height:250px">
+                        <img src="Assets/Index-images/SVGs/undraw_File_searching_re_3evy.svg" alt=""
+                            style="height:250px">
                         <div class="pt-3">
                             <p>Find the most suitable job for you</p>
                         </div>
@@ -55,7 +68,8 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="find card p-3 mb-1">
-                        <img src="./Assets/SVGs/undraw_prototyping_process_rswj.svg" alt=""  style="height:250px">
+                        <img src="Assets/Index-images/SVGs/undraw_prototyping_process_rswj.svg" alt=""
+                            style="height:250px">
                         <div class="pt-3">
                             <p>Research on the company offering the space</p>
                         </div>
@@ -63,7 +77,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="find card p-3">
-                        <img src="./Assets/SVGs/undraw_Resume_re_hkth.svg" alt=""  style="height:250px">
+                        <img src="Assets/Index-images/SVGs/undraw_Resume_re_hkth.svg" alt="" style="height:250px">
                         <div class="pt-3">
                             <p>Apply for the job</p>
                         </div>
@@ -73,10 +87,10 @@
         </div>
     </section>
 
-  <!-- sign up and sign sections -->
+    <!-- sign up and sign sections -->
     <section id="sign" class="mt-5">
         <div class="sign">
-            <form action="" id="signIn" >
+            <form action="" id="signIn">
                 <div id="signedIn">
                     <p class="text-center">Sign in to view available positions</p>
                     <p class="confirm text-primary">You account is created, you can now sign in!</p>
@@ -84,7 +98,7 @@
                         *Please fill in the input fields
                     </p>
                     <div class="form-group">
-                        <label for="">Username*</label>  
+                        <label for="">Username*</label>
                         <input type="text" class="form-control" id="userName" required>
                     </div>
                     <div class="form-group">
@@ -115,10 +129,10 @@
                     </div>
                 </div>
             </form>
-        </div> 
+        </div>
 
-       <!--sign up form -->
-            <div class="signUp">
+        <!--sign up form -->
+        <div class="signUp">
             <form action="" id="signUp">
                 <div id="signedUp">
                     <p class="text-center text-3">Create an account</p>
@@ -154,7 +168,7 @@
                 </div>
             </form>
         </div>
-    </section> 
+    </section>
 
     <!-- link to the jobs and services page -->
     <section class="p-5">
@@ -179,5 +193,8 @@
         </div>
     </section>
 </body>
-<script src="./js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="index-js/script.js"></script>
+
 </html>
