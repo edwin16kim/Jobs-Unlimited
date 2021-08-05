@@ -79,6 +79,7 @@
             <form action="" id="signIn" >
                 <div id="signedIn">
                     <p class="text-center">Sign in to view available positions</p>
+                    <p class="confirm text-primary">You account is created, you can now sign in!</p>
                     <p class="fill pt-3 text-danger">
                         *Please fill in the input fields
                     </p>
@@ -123,26 +124,31 @@
                     <p class="text-center text-3">Create an account</p>
                     <div class="form-group">
                         <label for="">Name*</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="createName">
+                        <p class="text-danger" id="create1">*Please enter your Name</p>
                     </div>
                     <div class="form-group">
                         <label for="">Username*</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="createUser">
+                        <p class="text-danger" id="create2">*Please enter your Userame</p>
                     </div>
                     <div class="form-group">
                         <label for="">Email*</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" id="createEmail">
+                        <p class="text-danger" id="create3">*Please enter your Email</p>
                     </div>
                     <div class="form-group">
                         <label for="p">Password*</label>
-                        <input id="p" type="password" class="form-control">
+                        <input type="password" class="form-control" id="createPass">
+                        <p class="text-danger" id="create4">*Please create a Password</p>
                     </div>
                     <div class="form-group">
                         <label for="">Confirm Password*</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" id="createConfirm">
+                        <p class="text-danger" id="create5">*Confirm your Password</p>
                     </div>
                     <div class="buttons">
-                        <input type="button" value="Create" class="btn btn-dark">
+                        <input type="button" value="Create" class="btn btn-dark" id="create">
                         <input type="button" value="Sign In" id="logIn" class="btn btn-dark">
                     </div>
                 </div>

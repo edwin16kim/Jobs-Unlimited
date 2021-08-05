@@ -2,9 +2,10 @@
 $(document).ready(function(){
     $("#limit").addClass("text-center");
     $("#available, #jobsView, .card").addClass("text-center");
-    $("#copyright").addClass("text-center");
+    $("#copyright, .confirm").addClass("text-center");
     $(".buttons, .failed, .userEnter, .passEnter, .fill").addClass("text-center");
-    $(".signUp, .failed, .userEnter, .passEnter, .fill").hide();
+    $(".signUp, .failed, .userEnter, .passEnter, .fill, .confirm").hide();
+    $("#create1, #create2, #create3, #create4, #create5").hide();
 })
 
 // Businness logic
@@ -69,7 +70,51 @@ $(document).ready(function(){
         })
     })
     // Validate the sign up button. create account button
-
+    $("#create").click(function(){
+        var createName = $("#createName").val();
+        var createUser = $("#createUser").val();
+        var createEmail = $("#createEmail").val();
+        var createPass = $("#createPass").val();
+        var createConfirm = $("#createConfirm").val();
+        if(createName == ""){
+            $("#create1").show(500);
+        }
+        else if(createUser == ""){
+            $("#create2").show(500);
+        }
+        else if(createEmail == ""){
+            $("#create3").show(500);
+        }
+        else if(createPass == ""){
+            $("#create4").show(500);
+        }
+        else if(createConfirm == ""){
+            $("#create5").show(500);
+        }
+        else if(createPass !== createConfirm){
+            alert("password and confirm password are not the same");
+        }
+        else{
+            $(".signUp").hide(500);
+            $(".sign").show(500);
+            $(".confirm").show(500);
+        }
+        $("#createName").click(function(){
+            $("#create1").hide(500);
+        })
+        $("#createUser").click(function(){
+            $("#create2").hide(500);
+        })
+        $("#createEmail").click(function(){
+            $("#create3").hide(500);
+        })
+        $("#createPass").click(function(){
+            $("#create4").hide(500);
+        })
+        $("#createConfirm").click(function(){
+            $("#create5").hide(500);
+        })
+    })
     // create account button to show sign up form and hide sign in form
     $("#newAccount").click(function(){
         $(".signUp").show(500);
