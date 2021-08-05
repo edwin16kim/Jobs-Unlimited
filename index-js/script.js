@@ -40,7 +40,9 @@ $(document).ready(function () {
         event.preventDefault();
         var userName = $("#userName").val();
         var passWord = $("#passWord").val();
-        if (userName == "admin" && passWord == "user") {
+        var createUser = $("#createUser").val();
+        var createPass = $("#createPass").val();
+        if (userName == createUser && passWord == createPass) {
             document.location.href = "services.html";
             return true;
         } else if (userName == "" && passWord == "") {
