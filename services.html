@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Unlimited</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/services.css">
+</head>
+
+<body>
+
+
+    <form class="jobs-form">
+        <i class="bi bi-x-lg" id="jobsHide"></i>
+        <h2 class="postjobs-head">Post job</h2>
+        <div class="form-group" id="form-group">
+            <label for="Job company">Job company*</label>
+            <input type="text" name="company" placeholder="Enter job company" class="form-inputs" id="forminput-company"
+                required>
+        </div>
+        <div class="form-group" id="form-work1">
+            <label for="type of job">Type of job*</label>
+            <input type="text" name="Type" placeholder="Enter type of job" class="form-inputs" id="typeOfJob" required>
+        </div>
+        <div class="form-group" id="form-work2">
+            <label for="location">Location*</label>
+            <input type="text" name="Location" placeholder="Enter location" class="form-inputs" id="locationOfJob"
+                required>
+        </div>
+        <div class="form-group" id="form-work3">
+            <label for="Requirements">Requirements*</label>
+            <input type="text" name="Requirements" placeholder="Enter requirements" class="form-inputs" id="" required>
+        </div>
+        <div class="form-group" id="form-work4">
+            <label for="Salary">Salary(Kshs)*</label>
+            <input type="number" name="Salary" placeholder="Enter salary" class="form-inputs" id="" required>
+        </div>
+        <input type="submit" value="submit" id="submit-jobs">
+    </form>
+
+    <form class="apply-form">
+        <i class="bi bi-x-lg" id="applyHide"></i>
+        <h2 class="postjobs-head">Apply for a job</h2>
+        <div class="form-group" id="formgroup">
+            <label for="name">Name*</label>
+            <input type="text" name="username" placeholder="Enter your name" class="apply-form-inputs"
+                id="form-input-name" required>
+        </div>
+        <div class="form-group" id="formgroup1">
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="Enter your email" class="apply-form-inputs" id=""
+                pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+        </div>
+        <div class="form-group" id="formgroup2">
+            <label for="Age">Age*</label>
+            <input type="number" name="Age" placeholder="Enter your age" class="apply-form-inputs" id="" required>
+        </div>
+        <div class="form-group" id="formgroup3">
+            <label for="gender">Gender*</label>
+            <select class="apply-form-inputs" required>
+                <option value="" disabled selected>Select</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+        <div class="form-group" id="formgroup4">
+            <label for="location">Location*</label>
+            <input type="text" name="Location" placeholder="Enter location" class="apply-form-inputs" id="" required>
+        </div>
+        <input type="submit" value="submit" id="submit-application">
+    </form>
+
+    <div class="body-overlay"></div>
+    <header>
+        <img src="Assets/images/services.jpg" alt="laptop header" class="header">
+    </header>
+
+    <div class="menu">
+        <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-nav-brand"
+                id="menu-nav-brand"></a>
+        <i class="bi bi-x-lg cancel menu-cancel" id="cancel"></i>
+        <ul>
+            <a href="index.html">
+                <li><i class="bi bi-house-fill" id="menu-home"></i>Home</li>
+            </a>
+            <a href="about.html">
+                <li><i class="bi bi-file-person-fill" id="menu-about"></i>About</li>
+            </a>
+            <a href="services.html">
+                <li><i class="bi bi-gear-fill" id="menu-services"></i>Services</li>
+            </a>
+            <a href="contact.html">
+                <li><i class="bi bi-telephone-plus-fill" id="menu-contact"></i>Contact Us</li>
+            </a>
+        </ul>
+    </div>
+
+    <nav class="navbar nav-bar" id="navbar">
+        <i class="bi bi-list bar" id="menu-bar"></i>
+        <a href="index.html"><img src="Assets/images/nav-brand.png" alt="job search logo" class="navbar-brand nav-bar-brand"
+                id="navbar-brand"></a>
+        <h1 id="nav-head">JOBS UNLIMITED</h1>
+        <div class="nav-icons">
+            <i class="bi bi-facebook" id="facebook"></i>
+            <i class="bi bi-instagram" id="instagram"></i>
+            <i class="bi bi-twitter" id="twitter"></i>
+        </div>
+    </nav>
+
+    <div class="ourServices">
+        <h2>What we do</h2>
+        <p>We provide opportunities for both manual and casual jobs.Unlike manual jobs,some casual jobs require
+            you to have necessary skills required by the employer.
+        </p>
+        <p id="second-p">Are you interested in casual jobs?Click <a href="#input-file" id="displayFile">here</a> to
+            upload your high school certificate and national identity card.</p>
+        <form id="form">
+            <input type="file" name="files" id="input-file" accept=".doc, .pdf" multiple>
+            <p id="form-error">Enter required data</p>
+            <p id="form-error2">You can only enter a maximum of 2 files</p>
+            <input type="submit" value="submit" id="submitFiles">
+        </form>
+        <div class="jobs-section">
+            <div class="jobs">
+                <div class="apply" id="packaging">
+                    <h3 class="job-types">Packaging and distributing</h3>
+                    <h4 class="job-location">Nairobi</h4>
+                    <button class="job-btns" id="packaging-btn">Apply</button>
+                </div>
+                <div class="apply" id="">
+                    <h3 class="job-types">Driver</h3>
+                    <h4 class="job-location">Kiambu</h4>
+                    <button class="job-btns" id="">Apply</button>
+                </div>
+                <div class="apply" id="">
+                    <h3 class="job-types">Cashier – Retail Sales</h3>
+                    <h4 class="job-location">Mombasa</h4>
+                    <button class="job-btns" id="">Apply</button>
+                </div>
+            </div>
+            <div class="jobs2">
+                <div class="apply" id="">
+                    <h3 class="job-types">Tutor/Lecturer</h3>
+                    <h4 class="job-location">Kisumu</h4>
+                    <button class="job-btns" id="">Apply</button>
+                </div>
+                <div class="apply" id="">
+                    <h3 class="job-types">Store Supervisor</h3>
+                    <h4 class="job-location">Nairobi</h4>
+                    <button class="job-btns" id="">Apply</button>
+                </div>
+                <div class="apply" id="">
+                    <h3 class="job-types" id="sales-rep">Sales Representatives – Logbook Loans</h3>
+                    <h4 class="job-location">Nakuru</h4>
+                    <button class="job-btns" id="">Apply</button>
+                </div>
+            </div>
+            <div class="jobs3">
+                <div class="apply2" id="apply">
+                    <h3 class="job-types work"></h3>
+                    <h4 class="job-location work-loc"></h4>
+                    <button class="job-btns" id="">Apply</button>
+                </div>
+            </div>
+        </div>
+        <a href="http://www.kenyancareer.com/" target="_blank" style="text-decoration: none;"><button
+                class="view-more">View More</button></a>
+        <p id="post-jobs">Post available jobs that you are aware of.</p>
+        <button class="post-btn">Post jobs</button>
+    </div>
+    </div>
+
+    <footer id="footer">
+        <div class="row justify-content-between">
+            <div id="contact" class="col-sm-4 text-center">
+                <p>Contact</br><a href="mailto:jobsavailable@gmail.com" target="_blank">jobsavailable@gmail.com</a>
+                    </br>+254701020304</p>
+            </div>
+            <div id="location" class="col-sm-4 text-center">
+                <p>Location</br>5th Street boulevard</br>Madison building</p>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright 2021, All rights reserved</br>Jobs Unlimited</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
