@@ -19,6 +19,22 @@ $(document).ready(function(){
             }
             else ($(".nav-bar").removeClass("navbar-scroll"))
         })
+        $("#menu-bar").click(function(){
+            $(".menu").slideDown();
+            $(".nav-nav-brand").removeAttr("id");
+            $(".nav-nav-brand").addClass("menu-nav-brand");
+            $(".nav-bar-brand").fadeOut();
+            $(".menu-cancel").fadeIn();
+            $(".body-overlay").fadeIn();
+        })
+        $(".menu-cancel").click(function(){
+            $(".menu").slideUp();
+            $(".nav-nav-brand").removeClass("menu-nav-brand");
+            $(".nav-nav-brand").attr("id", "navbar-brand");
+            $(".nav-bar-brand").fadeIn();
+            $(".menu-cancel").fadeOut();
+            $(".body-overlay").fadeOut();
+        })
      })
     // On clicking the sign in button
     $("#enter").click(function(){
