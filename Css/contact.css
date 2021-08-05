@@ -116,7 +116,7 @@ i{
 #sub1{
     padding: 15px;
     margin-top: 8px;
-    background-color:#3C403D;
+    background-color:black;
     width: 30%;
     font-size: large;
     font-weight: bold;
@@ -125,7 +125,8 @@ i{
     border-radius: 10px;
 }
 #sub1:hover{
-    background-color:  #ffa8B6;
+    background-color:  transparent;
+    border: 2px solid black;
 }
 textarea{
     margin: 1%;
@@ -153,13 +154,17 @@ textarea{
 #cribe{
     padding: 15px;
     margin-top: 8px;
-    background-color:#3C403D;
+    background-color:black;
     width: 30%;
     font-size: large;
     font-weight: bold;
     color: white;
     border: none;
     border-radius: 10px; 
+}
+#cribe:hover{
+    background-color: transparent;
+    border: 2px solid black;
 }
 #cancelButton{
     background-color: red;
