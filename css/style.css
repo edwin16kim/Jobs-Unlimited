@@ -1,3 +1,7 @@
+/*All sections*/
+*{
+    overflow-x: hidden;
+}
 
 /* the header section*/
 #navbar{
@@ -103,6 +107,7 @@ i{
     padding: 20px;
     cursor: pointer;
 }
+/* banner section */
 #banner{
     height: 55vh;
     background-image: url("../Assets/damian-zaleski-RYyr-k3Ysqg-unsplash\ \(2\).jpg");
@@ -112,9 +117,11 @@ i{
 #limit{
     font-size: xx-large;
 }
+/* Shadow on class find cards */
 .find:hover{
     box-shadow: 5px 5px 7px 5px rgb(125, 125, 245);
 }
+/* media queries for smaller devices. less than 601 px width  */
 @media only screen and (max-width: 601px){
     *{
         overflow-x: hidden;
@@ -143,6 +150,7 @@ i{
         padding: 15px;
     }
 }
+/* mdia queries for width device greater than 601 px */
 @media only screen and (min-width: 602px){
     .bigText{
         font-size: 56px;
@@ -163,6 +171,7 @@ i{
         margin-top: 15px;
     }
 }
+/* sign in and sign up forms  */
 #signIn, #signUp{
     border: 1px solid grey;
     background-color: #C4C4C4;
@@ -170,12 +179,18 @@ i{
 #available{
     font-size: xx-large;
 }
+/* All buttons. on hover only  */
 .btn:hover{
     font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid grey;
+    color: black;
 }
+/* View jobs id */
 #jobsView{
     margin: auto;
 }
+/* footer  */
 #footer{
     background-color: #C4C4C4;
 }
