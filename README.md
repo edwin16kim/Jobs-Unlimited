@@ -1,5 +1,5 @@
 # Job-unlimited
-#### This is a webApp linking people to the jobs they are ineed of }, {Created on 5th August 2021
+#### Jobs-unlimited is a web app that seeks to solve the issue of unemployment by revealing present opportunities to job seekers. Job seekers create their accounts then view available positions before applying to any of their liking. One can also post gaps seeking for personnel form their companies. Click the live llink below to tour the site.}, {Created on 5th August 2021
 #### By
  **<a>Aron kipkoech langat</a>**
 
