@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Jobs-Unlimited</title>
 </head>
-<body class="contain">
+<body>
     <!-- The header section-->
     <div class="menu">
         <a href="index.html"><img src="Assets/nav-brand.png" alt="job search logo" class="navbar-brand nav-nav-brand" id="menu-nav-brand"></a>
@@ -44,65 +44,72 @@
     <section class="mt-4">
         <p id="limit">How Jobs Unlimited Works</p>
         <div class="row">
-            <!-- <div class="col-sm-3"> -->
-                <div class="card-group">
-                    <div class="col-sm-4">
-                        <div class="find card p-3 mb-1">
-                            <img src="./Assets/SVGs/undraw_File_searching_re_3evy.svg" alt="" style="height:250px">
-                            <div class="pt-3">
-                                <p>Find the most suitable job for you</p>
-                            </div>
+            <div class="card-group">
+                <div class="col-sm-4">
+                    <div class="find card p-3 mb-1">
+                        <img src="./Assets/SVGs/undraw_File_searching_re_3evy.svg" alt="" style="height:250px">
+                        <div class="pt-3">
+                            <p>Find the most suitable job for you</p>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="find card p-3 mb-1">
-                            <img src="./Assets/SVGs/undraw_prototyping_process_rswj.svg" alt=""  style="height:250px">
-                            <div class="pt-3">
-                                <p>Research on the company offering the space</p>
-                            </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="find card p-3 mb-1">
+                        <img src="./Assets/SVGs/undraw_prototyping_process_rswj.svg" alt=""  style="height:250px">
+                        <div class="pt-3">
+                            <p>Research on the company offering the space</p>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="find card p-3">
-                            <img src="./Assets/SVGs/undraw_Resume_re_hkth.svg" alt=""  style="height:250px">
-                            <div class="pt-3">
-                                <p>Apply for the job</p>
-                            </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="find card p-3">
+                        <img src="./Assets/SVGs/undraw_Resume_re_hkth.svg" alt=""  style="height:250px">
+                        <div class="pt-3">
+                            <p>Apply for the job</p>
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
+            </div>
         </div>
     </section>
-
-
-
-
 
   <!-- sign up and sign sections -->
     <section id="sign" class="mt-5">
         <div class="sign">
-            <form action="" id="signIn" onSubmit="return service.html">
+            <form action="" id="signIn" >
                 <div id="signedIn">
                     <p class="text-center">Sign in to view available positions</p>
+                    <p class="fill pt-3 text-danger">
+                        *Please fill in the input fields
+                    </p>
                     <div class="form-group">
-                    <label for="">Username*</label>  
-                    <input type="text" class="form-control" id="userName" required>
+                        <label for="">Username*</label>  
+                        <input type="text" class="form-control" id="userName" required>
                     </div>
                     <div class="form-group">
                         <label for="">Password*</label>
                         <input type="password" class="form-control" id="passWord" required>
                     </div>
+                    <p class="failed pt-3 text-danger">
+                        *Log in failed. Wrong credentials
+                    </p>
+                    <p class="userEnter pt-3 text-danger">
+                        *Please enter username
+                    </p>
+                    <p class="passEnter pt-3 text-danger">
+                        *Please enter password
+                    </p>
                     <div class="form-group buttons">
                         <div>
                             <a href="services.html">
-                                <input type="button" value="sign in" id="enter" class="btn btn-primary">
+                                <input type="button" value="Sign in" id="enter" class="btn btn-dark">
                             </a>
                         </div>
                         <div>
                             Or
                         </div>
                         <div>
-                            <input type="button" value="create account" id="newAccount" class="btn btn-primary">
+                            <input type="button" value="Create account" id="newAccount" class="btn btn-dark">
                         </div>
                     </div>
                 </div>
@@ -110,7 +117,6 @@
         </div> 
 
        <!--sign up form -->
-
             <div class="signUp">
             <form action="" id="signUp">
                 <div id="signedUp">
@@ -128,16 +134,16 @@
                         <input type="email" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="">Password*</label>
-                        <input type="password" class="form-control">
+                        <label for="p">Password*</label>
+                        <input id="p" type="password" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="">Confirm Password*</label>
                         <input type="password" class="form-control">
                     </div>
                     <div class="buttons">
-                        <input type="button" value="Create" class="btn btn-primary">
-                        <input type="button" value="Sign In" id="logIn" class="btn btn-primary">
+                        <input type="button" value="Create" class="btn btn-dark">
+                        <input type="button" value="Sign In" id="logIn" class="btn btn-dark">
                     </div>
                 </div>
             </form>
@@ -148,7 +154,7 @@
     <section class="p-5">
         <p id="available">Click here to browse available jobs</p>
         <div id="jobsView">
-            <input type="button" class="btn btn-primary p-3" value="View available jobs">
+            <input type="button" class="btn btn-dark p-3" value="View available jobs">
         </div>
     </section>
 

@@ -3,14 +3,13 @@ $(document).ready(function(){
     $("#limit").addClass("text-center");
     $("#available, #jobsView, .card").addClass("text-center");
     $("#copyright").addClass("text-center");
-    $(".buttons, .failed").addClass("text-center");
-    $(".signUp, .failed").hide();
+    $(".buttons, .failed, .userEnter, .passEnter, .fill").addClass("text-center");
+    $(".signUp, .failed, .userEnter, .passEnter, .fill").hide();
 })
 
 // Businness logic
-
 $(document).ready(function(){
-    //header
+    // The navigation bar
     $(function(){
         $(window).scroll(function(){
             if ($(this).scrollTop() > 80){
@@ -36,7 +35,7 @@ $(document).ready(function(){
             $(".body-overlay").fadeOut();
         })
     })
-    // On clicking the sign in button
+    // validate the sign in button
     $("#enter").click(function(event){
         event.preventDefault();
         var userName = $("#userName").val();
@@ -47,20 +46,38 @@ $(document).ready(function(){
             return true;
         }
         else if(userName == "" && passWord == ""){
-            alert("Please fill the input fields")
+            $(".fill").show(500);
+        }
+        else if(userName == "" && passWord !== ""){
+            $(".userEnter").show(500);
+        }
+        else if(passWord == "" && userName !== ""){
+            $(".passEnter").show(500);
         }
         else{
-            $(".failed").show();
+            $(".failed").show(500);
         }
+        $("#userName").click(function(){
+            $(".fill").hide(500);
+            $(".failed").hide(500);
+            $("#userEnter").hide(500);
+        })
+        $("#passWord").click(function(){
+            $(".failed").hide(500);
+            $(".passEnter").hide(500);
+            $(".fill").hide(500);
+        })
     })
+    // Validate the sign up button. create account button
+
     // create account button to show sign up form and hide sign in form
     $("#newAccount").click(function(){
         $(".signUp").show(500);
-        $(".sign").hide();
+        $(".sign").hide(500);
     })
     // Returns user to the user sign In form from create new account form
     $("#logIn").click(function(){
-        $(".sign").show();
+        $(".sign").show(500);
         $(".signUp").hide(500);
     })
 })
