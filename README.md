@@ -44,7 +44,7 @@ Phone: <a>+254701020304</a>
 Email: <a href="mailto:jobsavailable@gmail.com">jobsavailable@gmail.com</a>
 
 ### License
-**<a href="https://github.com/marvinandreassen/Jobs-Unlimited/blob/main/LICENSE">MIT LICENSE</a>**
+**<a href="https://github.com/marvinandreassen/Jobs-Unlimited/blob/main/LICENSE">MIT</a>**
 <br>
 Copyright (c) 2021, Marvin Macharia,Aron kipkoech langat,Kyle Kibet,Edwin Kithinji. 
 
