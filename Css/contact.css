@@ -175,3 +175,16 @@ textarea{
     justify-content: center;
     align-items: center;
 }
+
+/* Footer Section */
+#footer{
+    background-color: #C4C4C4;
+    overflow-x: hidden;
+    margin-top: 1%;
+    font-size: large;
+}
+#copyright{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
