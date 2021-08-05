@@ -35,15 +35,22 @@ $(document).ready(function(){
             $(".menu-cancel").fadeOut();
             $(".body-overlay").fadeOut();
         })
-     })
+    })
     // On clicking the sign in button
-    $("#enter").click(function(){
-        var personName = $("#userName").val();
-        if(personName == ""){
-            alert("Please enter Username");
+    $("#enter").click(function(event){
+        event.preventDefault();
+        var userName = $("#userName").val();
+        var passWord = $("#passWord").val();
+        if(userName=="admin" && passWord=="user")
+        {
+            document.location.href="services.html";
+            return true;
+        }
+        else if(userName == "" && passWord == ""){
+            alert("Please fill the input fields")
         }
         else{
-            return true;
+            alert("login failed");
         }
     })
     // create account button to show sign up form and hide sign in form
