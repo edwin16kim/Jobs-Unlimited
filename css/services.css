@@ -87,6 +87,7 @@ body {
 
 #nav-head {
     margin-left: -40px;
+    font-weight: bold;
 }
 
 .nav-icons {
@@ -158,6 +159,7 @@ i {
 .ourServices h2 {
     text-align: center;
     font-size: 32px;
+    font-weight: bold;
 }
 
 .ourServices p {
@@ -498,7 +500,7 @@ i {
 
     .menu ul li {
         font-size: 9px;
-        margin:31px;
+        margin: 31px;
     }
 
     #menu-home {
@@ -521,416 +523,1148 @@ i {
         font-size: 8px;
         padding: 10px;
     }
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    #navbar {
-        height: 50px;
-        margin-top: -20px
+    .header {
+        height: 150px;
     }
 
-    .navbar-scroll {
-        height: 70px;
-        top: -20px;
+    .ourServices {
+        top: 130px;
     }
 
-    @keyframes scroll {
-        from {
-            height: 0;
-        }
-
-        to {
-            height: 70px;
-        }
+    .ourServices h2 {
+        font-size: 18px;
     }
 
-    #menu-bar {
+    .ourServices p {
+        width: 500px;
+        font-size: 6px;
+        letter-spacing: 0.03em;
+    }
+
+    #second-p {
+        margin-top: 8px;
+        width: 300px;
+    }
+
+    #input-file {
+        width: 100px;
+        font-size: 7px;
+        margin-top: 20px;
+        margin-left: 220px;
+    }
+
+    #form-error {
+        font-size: 5px;
         margin-top: 3px;
+    }
+
+    #form-error2 {
+        font-size: 5px;
+        margin-top: 5px;
+    }
+
+    #submitFiles {
+        font-size: 5px;
         width: 35px;
-        font-size: 24px;
-    }
-
-    #navbar-brand {
-        top: 23px;
-        margin-left: -50px;
-        width: 30px;
-    }
-
-    .menu-cancel {
-        width: 35px;
-        font-size: 16px;
-        margin-top: 20px;
-        margin-left: 110px;
-    }
-
-
-    .menu-nav-brand {
+        height: 15px;
         margin-top: 1px;
-        margin-left: 6px;
-        width: 28px;
+        margin-left: 250px;
     }
 
-    #nav-head {
-        margin-top: 11px;
-        font-size: 22px;
-        margin-left: -10px;
+    .jobs-section {
+        margin-top: 10px;
     }
 
-    .nav-icons {
-        right: 90px;
-        margin-left: 35px;
+
+    .jobs2 {
+        margin-top: 10px;
     }
 
-    .menu {
-        width: 22%;
-        height: 48%;
+    .jobs3 {
+        margin-top: 10px;
     }
 
-    .menu ul {
-        margin-top: 70px;
-        margin-left: -31px;
+    .apply {
+        width: 100px;
+        height: 70px;
     }
 
-    .menu ul li {
-        font-size: 11px;
-        margin: 43px;
+    .apply2 {
+        width: 100px;
+        height: 70px;
     }
 
-    #menu-home {
-        font-size: 14px;
+    .job-types {
+        font-size: 8px;
     }
 
-    #menu-about {
-        font-size: 14px;
+    .job-location {
+        font-size: 5px;
     }
 
-    #menu-services {
-        font-size: 14px;
+    .job-btns {
+        width: 20px;
+        height: 10px;
+        font-size: 3px;
     }
 
-    #menu-contact {
-        font-size: 14px;
+    #sales-rep {
+        width: 100px;
     }
 
-    i {
-        font-size: 10px;
-        padding: 14px;
+    .view-more {
+        margin-top: 12px;
+        width: 40px;
+        height: 20px;
+        font-size: 5px;
     }
-}
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #navbar {
-        height: 80px;
+    #post-jobs {
+        margin-top: 10px;
+        margin-left: -80px;
+        font-size: 7px;
+    }
+
+    .post-btn {
+        margin-top: 12px;
+        width: 40px;
+        height: 20px;
+        font-size: 6px;
+    }
+
+    #footer {
+        position: relative;
+        font-size: 5px;
+        padding: 5px;
+        height: 100px;
+        top: 200px;
+    }
+
+    #copyright {
+        font-size: 4px;
+    }
+
+    .postjobs-head {
+        font-size: 9px;
+    }
+
+    .jobs-form {
+        top: 13%;
+        left: 37%;
+        width: 21%;
+        height: 42%;
+        padding: 15px;
+    }
+
+    .form-inputs {
+        width: 70px;
+        height: 20px;
+        padding: 2px;
+        font-size: 5px;
+    }
+
+    .form-group {
+        margin-top: -5px;
+    }
+
+    label {
+        font-size: 8px;
+    }
+
+    #jobsHide {
         margin-top: -20px;
+        font-size: 9px;
     }
 
-    .navbar-scroll {
-        height: 80px;
-        top: -20px;
+    #submit-jobs {
+        margin-top: 10px;
+        width: 25px;
+        height: 13px;
+        font-size: 5px;
     }
 
-    @keyframes scroll {
-        from {
-            height: 0;
+    .apply-form {
+        top: 13%;
+        left: 37%;
+        width: 21%;
+        height: 42%;
+        padding: 15px;
+    }
+
+    #applyHide {
+        margin-top: -20px;
+        font-size: 9px;
+    }
+
+    .apply-form-inputs {
+        width: 70px;
+        height: 20px;
+        padding: 2px;
+        font-size: 5px;
+    }
+
+    #submit-application {
+        margin-top: 10px;
+        width: 25px;
+        height: 13px;
+        font-size: 5px;
+    }
+
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        #navbar {
+            height: 50px;
+            margin-top: -20px
         }
 
-        to {
+        .navbar-scroll {
+            height: 70px;
+            top: -20px;
+        }
+
+        @keyframes scroll {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 70px;
+            }
+        }
+
+        #menu-bar {
+            margin-top: 3px;
+            width: 35px;
+            font-size: 24px;
+        }
+
+        #navbar-brand {
+            top: 23px;
+            margin-left: -50px;
+            width: 30px;
+        }
+
+        .menu-cancel {
+            width: 35px;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-left: 110px;
+        }
+
+
+        .menu-nav-brand {
+            margin-top: 1px;
+            margin-left: 6px;
+            width: 28px;
+        }
+
+        #nav-head {
+            margin-top: 11px;
+            font-size: 22px;
+            margin-left: -10px;
+        }
+
+        .nav-icons {
+            right: 90px;
+            margin-left: 35px;
+        }
+
+        .menu {
+            width: 22%;
+            height: 48%;
+        }
+
+        .menu ul {
+            margin-top: 70px;
+            margin-left: -31px;
+        }
+
+        .menu ul li {
+            font-size: 11px;
+            margin: 43px;
+        }
+
+        #menu-home {
+            font-size: 14px;
+        }
+
+        #menu-about {
+            font-size: 14px;
+        }
+
+        #menu-services {
+            font-size: 14px;
+        }
+
+        #menu-contact {
+            font-size: 14px;
+        }
+
+        i {
+            font-size: 10px;
+            padding: 14px;
+        }
+
+        .header {
+            height: 250px;
+        }
+
+        .ourServices {
+            top: 180px;
+        }
+
+        .ourServices h2 {
+            font-size: 18px;
+        }
+
+        .ourServices p {
+            width: 700px;
+            font-size: 10px;
+            letter-spacing: 0.04em;
+        }
+
+        #second-p {
+            margin-top: 10px;
+            width: 450px;
+        }
+
+        #input-file {
+            width: 130px;
+            font-size: 12px;
+            margin-top: 20px;
+            margin-left: 320px;
+        }
+
+        #form-error {
+            font-size: 7px;
+            margin-top: 3px;
+        }
+
+        #form-error2 {
+            font-size: 7px;
+            margin-top: 5px;
+        }
+
+        #submitFiles {
+            font-size: 8px;
+            width: 50px;
+            height: 18px;
+            margin-top: 10px;
+            margin-left: 350px;
+        }
+
+        .jobs-section {
+            margin-top: 20px;
+        }
+
+
+        .jobs2 {
+            margin-top: 20px;
+        }
+
+        .jobs3 {
+            margin-top: 20px;
+        }
+
+        .apply {
+            width: 150px;
+            height: 100px;
+        }
+
+        .apply2 {
+            width: 150px;
+            height: 100px;
+        }
+
+        .job-types {
+            font-size: 11px;
+        }
+
+        .job-location {
+            font-size: 8px;
+        }
+
+        .job-btns {
+            width: 30px;
+            height: 15px;
+            font-size: 6px;
+        }
+
+        #sales-rep {
+            width: 140px;
+        }
+
+        .view-more {
+            margin-top: 15px;
+            width: 60px;
+            height: 25px;
+            font-size: 9px;
+        }
+
+        #post-jobs {
+            margin-top: 10px;
+            margin-left: -80px;
+            font-size: 13px;
+        }
+
+        .post-btn {
+            margin-top: 15px;
+            width: 60px;
+            height: 25px;
+            font-size: 9px;
+        }
+
+        #footer {
+            font-size: 11px;
+            padding: 8px;
+            height: 100px;
+            top: 300px;
+        }
+
+        #copyright {
+            font-size: 9px;
+        }
+
+        .postjobs-head {
+            font-size: 15px;
+        }
+
+        .jobs-form {
+            top: 13%;
+            left: 37%;
+            width: 26%;
+            height: 55%;
+            padding: 23px;
+        }
+
+        .form-inputs {
+            width: 150px;
+            height: 30px;
+            padding: 4px;
+            font-size: 9px;
+        }
+
+        .form-group {
+            margin-top: 5px;
+        }
+
+        label {
+            font-size: 10px;
+        }
+
+        #jobsHide {
+            margin-top: -32px;
+            font-size: 12px;
+        }
+
+        #submit-jobs {
+            margin-top: 10px;
+            width: 40px;
+            height: 20px;
+            font-size: 8px;
+        }
+
+        .apply-form {
+            top: 13%;
+            left: 37%;
+            width: 26%;
+            height: 55%;
+            padding: 23px;
+        }
+
+        #applyHide {
+            margin-top: -32px;
+            font-size: 12px;
+        }
+
+        .apply-form-inputs {
+            width: 150px;
+            height: 30px;
+            padding: 4px;
+            font-size: 9px;
+        }
+
+        #submit-application {
+            margin-top: 10px;
+            width: 40px;
+            height: 20px;
+            font-size: 8px;
+        }
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        #navbar {
             height: 80px;
+            margin-top: -20px;
+        }
+
+        .navbar-scroll {
+            height: 80px;
+            top: -20px;
+        }
+
+        @keyframes scroll {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 80px;
+            }
+        }
+
+        #menu-bar {
+            width: 39px;
+            font-size: 30px;
+        }
+
+        #navbar-brand {
+            top: 23px;
+            margin-left: -60px;
+            width: 39px;
+        }
+
+        .menu-cancel {
+            width: 38px;
+            font-size: 20px;
+            margin-top: 21px;
+            margin-left: 140px;
+        }
+
+
+        .menu-nav-brand {
+            margin-left: 10px;
+            width: 38px;
+        }
+
+        #nav-head {
+            margin-top: 11px;
+            font-size: 24px;
+            margin-left: -20px;
+        }
+
+        .nav-icons {
+            right: 90px;
+            margin-left: 35px;
+        }
+
+        .menu {
+            width: 20%;
+            height: 60%;
+        }
+
+        .menu ul {
+            margin-top: 80px;
+            margin-left: -32px;
+        }
+
+        .menu ul li {
+            font-size: 14px;
+            margin: 54px;
+        }
+
+        #menu-home {
+            font-size: 16px;
+        }
+
+        #menu-about {
+            font-size: 16px;
+        }
+
+        #menu-services {
+            font-size: 16px;
+        }
+
+        #menu-contact {
+            font-size: 16px;
+        }
+
+        i {
+            font-size: 12px;
+            padding: 17px;
+        }
+
+
+        .header {
+            height: 350px;
+        }
+
+        .ourServices {
+            top: 280px;
+        }
+
+        .ourServices h2 {
+            font-size: 18px;
+        }
+
+        .ourServices p {
+            width: 900px;
+            font-size: 14px;
+            letter-spacing: 0.06em;
+        }
+
+        #second-p {
+            margin-top: 15px;
+            width: 700px;
+        }
+
+        #input-file {
+            margin-top: 10px;
+            margin-left: 410px;
+        }
+
+        #form-error {
+            font-size: 9px;
+            margin-top: 3px;
+        }
+
+        #form-error2 {
+            font-size: 9px;
+            margin-top: 5px;
+        }
+
+        #submitFiles {
+            font-size: 12px;
+            width: 80px;
+            height: 28px;
+            margin-top: 14px;
+            margin-left: 450px;
+        }
+
+        .jobs-section {
+            margin-top: 30px;
+        }
+
+
+        .jobs2 {
+            margin-top: 30px;
+        }
+
+        .jobs3 {
+            margin-top: 30px;
+        }
+
+        .apply {
+            width: 200px;
+            height: 150px;
+        }
+
+        .apply2 {
+            width: 200px;
+            height: 150px;
+        }
+
+        .job-types {
+            font-size: 17px;
+        }
+
+        .job-location {
+            font-size: 14px;
+        }
+
+        .job-btns {
+            width: 70px;
+            height: 30px;
+            font-size: 11px;
+        }
+
+        #sales-rep {
+            width: 220px;
+        }
+
+        .view-more {
+            margin-top: 30px;
+            width: 110px;
+            height: 35px;
+            font-size: 12px;
+        }
+
+        #post-jobs {
+            margin-top: 10px;
+        }
+
+        .post-btn {
+            margin-top: 20px;
+            width: 110px;
+            height: 35px;
+            font-size: 12px;
+        }
+
+        #footer {
+            font-size: 13px;
+            padding: 13px;
+            top: 300px;
+        }
+
+
+        .postjobs-head {
+            font-size: 18px;
+        }
+
+        .jobs-form {
+            top: 13%;
+            left: 37%;
+            width: 26%;
+            height: 63%;
+            padding: 23px;
+        }
+
+        .form-inputs {
+            width: 200px;
+            height: 35px;
+            padding: 6px;
+            font-size: 12px;
+        }
+
+        .form-group {
+            margin-top: 9px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        #jobsHide {
+            margin-top: -30px;
+            font-size: 13px;
+        }
+
+        #submit-jobs {
+            margin-top: 15px;
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+        }
+
+        .apply-form {
+            top: 13%;
+            left: 37%;
+            width: 26%;
+            height: 63%;
+            padding: 23px;
+        }
+
+        #applyHide {
+            margin-top: -30px;
+            font-size: 13px;
+        }
+
+        .apply-form-inputs {
+            width: 200px;
+            height: 35px;
+            padding: 6px;
+            font-size: 12px;
+        }
+
+        #submit-application {
+            margin-top: 15px;
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
         }
     }
 
-    #menu-bar {
-        width: 39px;
-        font-size: 30px;
-    }
-
-    #navbar-brand {
-        top: 23px;
-        margin-left: -60px;
-        width: 39px;
-    }
-
-    .menu-cancel {
-        width: 38px;
-        font-size: 20px;
-        margin-top: 21px;
-        margin-left: 140px;
-    }
-
-
-    .menu-nav-brand {
-        margin-left: 10px;
-        width: 38px;
-    }
-
-    #nav-head {
-        margin-top: 11px;
-        font-size: 24px;
-        margin-left: -20px;
-    }
-
-    .nav-icons {
-        right: 90px;
-        margin-left: 35px;
-    }
-
-    .menu {
-        width: 20%;
-        height: 60%;
-    }
-
-    .menu ul {
-        margin-top: 80px;
-        margin-left: -32px;
-    }
-
-    .menu ul li {
-        font-size: 14px;
-        margin: 54px;
-    }
-
-    #menu-home {
-        font-size: 16px;
-    }
-
-    #menu-about {
-        font-size: 16px;
-    }
-
-    #menu-services {
-        font-size: 16px;
-    }
-
-    #menu-contact {
-        font-size: 16px;
-    }
-
-    i {
-        font-size: 12px;
-        padding: 17px;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    #navbar {
-        height: 85px;
-        margin-top: -20px;
-    }
-
-    .navbar-scroll {
-        height: 85px;
-        top: -20px;
-    }
-
-    @keyframes scroll {
-        from {
-            height: 0;
-        }
-
-        to {
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        #navbar {
             height: 85px;
-        }
-    }
-
-    #menu-bar {
-        width: 40px;
-        font-size: 33px;
-    }
-
-    #navbar-brand {
-        top: 26px;
-        margin-left: -100px;
-        width: 40px;
-    }
-
-    .menu-cancel {
-        width: 40px;
-        font-size: 22px;
-        margin-top: 17px;
-        margin-left: 170px;
-    }
-
-
-    .menu-nav-brand {
-        top: 3px;
-        margin-left: 10px;
-        width: 40px;
-    }
-
-    #nav-head {
-        font-size: 34px;
-        margin-left: -30px;
-    }
-
-    .nav-icons {
-        right: 100px;
-        margin-left: 40px;
-    }
-
-    .menu {
-        width: 20%;
-        height: 65%;
-    }
-
-    .menu ul {
-        margin-top: 90px;
-        margin-left: -30px;
-    }
-
-    .menu ul li {
-        font-size: 16px;
-        margin: 60px;
-    }
-
-    #menu-home {
-        font-size: 18px;
-    }
-
-    #menu-about {
-        font-size: 18px;
-    }
-
-    #menu-services {
-        font-size: 18px;
-    }
-
-    #menu-contact {
-        font-size: 18px;
-    }
-
-    i {
-        font-size: 13px;
-        padding: 19px;
-        cursor: pointer;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    #navbar {
-        position: sticky;
-        z-index: 3;
-        width: 100%;
-        height: 95px;
-        margin-top: -20px;
-        background-color: transparent;
-    }
-
-    .navbar-scroll {
-        position: sticky;
-        z-index: 3;
-        width: 100%;
-        height: 90px;
-        background-color: white;
-        top: -20px;
-        box-shadow: 2px 2px 7px;
-        transition: all ease-in-out 0.5s;
-        animation: scroll .4s;
-
-    }
-
-    @keyframes scroll {
-        from {
-            height: 0;
+            margin-top: -20px;
         }
 
-        to {
+        .navbar-scroll {
+            height: 85px;
+            top: -20px;
+        }
+
+        @keyframes scroll {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 85px;
+            }
+        }
+
+        #menu-bar {
+            width: 40px;
+            font-size: 33px;
+        }
+
+        #navbar-brand {
+            top: 26px;
+            margin-left: -100px;
+            width: 40px;
+        }
+
+        .menu-cancel {
+            width: 40px;
+            font-size: 22px;
+            margin-top: 17px;
+            margin-left: 170px;
+        }
+
+
+        .menu-nav-brand {
+            top: 3px;
+            margin-left: 10px;
+            width: 40px;
+        }
+
+        #nav-head {
+            font-size: 34px;
+            margin-left: -30px;
+        }
+
+        .nav-icons {
+            right: 100px;
+            margin-left: 40px;
+        }
+
+        .menu {
+            width: 20%;
+            height: 65%;
+        }
+
+        .menu ul {
+            margin-top: 90px;
+            margin-left: -30px;
+        }
+
+        .menu ul li {
+            font-size: 16px;
+            margin: 60px;
+        }
+
+        #menu-home {
+            font-size: 18px;
+        }
+
+        #menu-about {
+            font-size: 18px;
+        }
+
+        #menu-services {
+            font-size: 18px;
+        }
+
+        #menu-contact {
+            font-size: 18px;
+        }
+
+        i {
+            font-size: 13px;
+            padding: 19px;
+            cursor: pointer;
+        }
+
+
+        .header {
+            height: 400px;
+        }
+
+        .ourServices {
+            top: 330px;
+        }
+
+        .ourServices h2 {
+            font-size: 26px;
+        }
+
+        .ourServices p {
+            width: 1100px;
+            font-size: 17px;
+            letter-spacing: 0.06em;
+        }
+
+        #second-p {
+            margin-top: 20px;
+            width: 850px;
+        }
+
+        #input-file {
+            margin-top: 20px;
+            margin-left: 480px;
+        }
+
+        #form-error {
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
+        #form-error2 {
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
+        #submitFiles {
+            font-size: 16px;
+            width: 110px;
+            height: 30px;
+            margin-top: 14px;
+            margin-left: 500px;
+        }
+
+        .jobs-section {
+            margin-top: 40px;
+        }
+
+
+        .jobs2 {
+            margin-top: 50px;
+        }
+
+        .jobs3 {
+            margin-top: 50px;
+        }
+
+        .apply {
+            width: 300px;
+            height: 200px;
+        }
+
+        .apply2 {
+            width: 300px;
+            height: 200px;
+        }
+
+        .job-types {
+            font-size: 20px;
+        }
+
+        .job-location {
+            font-size: 18px;
+        }
+
+        .job-btns {
+            width: 110px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        #sales-rep {
+            width: 240px;
+        }
+
+        .view-more {
+            margin-top: 40px;
+            width: 140px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        #post-jobs {
+            margin-top: 20px;
+        }
+
+        .post-btn {
+            margin-top: 15px;
+            width: 140px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        #footer {
+            font-size: 16px;
+            padding: 15px;
+            top: 400px;
+        }
+
+
+        .postjobs-head {
+            font-size: 21px;
+        }
+
+        .jobs-form {
+            top: 13%;
+            left: 35%;
+            width: 30%;
+            height: 73%;
+            padding: 28px;
+        }
+
+        .form-inputs {
+            width: 280px;
+            height: 40px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-top: 12px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        #jobsHide {
+            margin-top: -40px;
+            font-size: 16px;
+        }
+
+        #submit-jobs {
+            margin-top: 25px;
+            width: 90px;
+            height: 35px;
+            font-size: 15px;
+        }
+
+        .apply-form {
+            top: 13%;
+            left: 35%;
+            width: 30%;
+            height: 73%;
+            padding: 28px;
+        }
+
+        #applyHide {
+            margin-top: -40px;
+            font-size: 16px;
+        }
+
+        .apply-form-inputs {
+            width: 280px;
+            height: 40px;
+            padding: 8px;
+        }
+
+        #submit-application {
+            margin-top: 25px;
+            width: 90px;
+            height: 35px;
+            font-size: 15px;
+        }
+
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+
+        #navbar {
+            position: sticky;
+            z-index: 3;
+            width: 100%;
+            height: 95px;
+            margin-top: -20px;
+            background-color: transparent;
+        }
+
+        .navbar-scroll {
+            position: sticky;
+            z-index: 3;
+            width: 100%;
             height: 90px;
+            background-color: white;
+            top: -20px;
+            box-shadow: 2px 2px 7px;
+            transition: all ease-in-out 0.5s;
+            animation: scroll .4s;
+
         }
-    }
 
-    #menu-bar {
-        width: 50px;
-        font-size: 35px;
-        cursor: pointer;
-    }
+        @keyframes scroll {
+            from {
+                height: 0;
+            }
 
-    #navbar-brand {
-        position: absolute;
-        top: 20px;
-        margin-left: -200px;
-        width: 50px;
-        cursor: pointer;
-    }
+            to {
+                height: 90px;
+            }
+        }
 
-    .menu-cancel {
-        display: none;
-        position: absolute;
-        width: 50px;
-        font-size: 25px;
-        cursor: pointer;
-        margin-top: 20px;
-        margin-left: 230px;
-        z-index: 4;
-    }
+        #menu-bar {
+            width: 50px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        #navbar-brand {
+            position: absolute;
+            top: 20px;
+            margin-left: -200px;
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .menu-cancel {
+            display: none;
+            position: absolute;
+            width: 50px;
+            font-size: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 230px;
+            z-index: 4;
+        }
 
 
-    .menu-nav-brand {
-        position: fixed;
-        top: 5px;
-        margin-top: 4px;
-        margin-left: 10px;
-        width: 50px;
-        cursor: pointer;
-        z-index: 4;
-    }
+        .menu-nav-brand {
+            position: fixed;
+            top: 5px;
+            margin-top: 4px;
+            margin-left: 10px;
+            width: 50px;
+            cursor: pointer;
+            z-index: 4;
+        }
 
-    #nav-head {
-        margin-left: -40px;
-    }
+        #nav-head {
+            margin-left: -40px;
+        }
 
-    .nav-icons {
-        right: 100px;
-        margin-left: 40px;
-    }
+        .nav-icons {
+            right: 100px;
+            margin-left: 40px;
+        }
 
-    .menu {
-        position: fixed;
-        display: none;
-        width: 20%;
-        height: 65%;
-        background-color: white;
-        z-index: 4;
-    }
+        .menu {
+            position: fixed;
+            display: none;
+            width: 20%;
+            height: 65%;
+            background-color: white;
+            z-index: 4;
+        }
 
-    .menu ul {
-        list-style: none;
-        z-index: 5;
-        margin-top: 110px;
-        margin-left: -46px;
-    }
+        .menu ul {
+            list-style: none;
+            z-index: 5;
+            margin-top: 110px;
+            margin-left: -46px;
+        }
 
-    .menu ul a {
-        color: black;
-    }
+        .menu ul a {
+            color: black;
+        }
 
-    .menu ul li {
-        font-size: 23px;
-        color: black;
-        margin: 70px;
-        cursor: pointer;
-    }
+        .menu ul li {
+            font-size: 23px;
+            color: black;
+            margin: 70px;
+            cursor: pointer;
+        }
 
-    #menu-home {
-        font-size: 20px;
-    }
+        #menu-home {
+            font-size: 20px;
+        }
 
-    #menu-about {
-        font-size: 20px;
-    }
+        #menu-about {
+            font-size: 20px;
+        }
 
-    #menu-services {
-        font-size: 20px;
-        color: black;
-    }
+        #menu-services {
+            font-size: 20px;
+            color: black;
+        }
 
-    i {
-        font-size: 14px;
-        padding: 20px;
-        cursor: pointer;
+        i {
+            font-size: 14px;
+            padding: 20px;
+            cursor: pointer;
+        }
     }
 }
