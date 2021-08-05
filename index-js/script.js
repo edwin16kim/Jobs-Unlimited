@@ -4,7 +4,7 @@ $(document).ready(function () {
     $("#available, #jobsView, .card").addClass("text-center");
     $("#copyright, .confirm").addClass("text-center");
     $(".buttons, .failed, .userEnter, .passEnter, .fill").addClass("text-center");
-    $(".signUp, .failed, .userEnter, .passEnter, .fill, .confirm").hide();
+    $("#signIn, .failed, .userEnter, .passEnter, .fill, .confirm").hide();
     $("#create1, #create2, #create3, #create4, #create5").hide();
 })
 
@@ -42,17 +42,20 @@ $(document).ready(function () {
         var passWord = $("#passWord").val();
         var createUser = $("#createUser").val();
         var createPass = $("#createPass").val();
-        if (userName == createUser && passWord == createPass) {
-            document.location.href = "services.html";
+        if (userName === createUser && passWord === createPass) {
+            window.location.href = "services.html";
             return true;
-        } else if (userName == "" && passWord == "") {
+        } else if (userName === "" && passWord === "") {
             $(".fill").show(500);
-        } else if (userName == "" && passWord !== "") {
+            return false;
+        } else if (userName === "" && passWord !== "") {
             $(".userEnter").show(500);
-        } else if (passWord == "" && userName !== "") {
+            return false;
+        } else if (passWord === "" && userName !== "") {
             $(".passEnter").show(500);
         } else {
             $(".failed").show(500);
+            return false
         }
         $("#userName").click(function () {
             $(".fill").hide(500);
@@ -65,6 +68,7 @@ $(document).ready(function () {
             $(".fill").hide(500);
         })
     })
+
     // Validate the sign up button. create account button
     $("#create").click(function () {
         var createName = $("#createName").val();
@@ -86,7 +90,7 @@ $(document).ready(function () {
             alert("password and confirm password are not the same");
         } else {
             $(".signUp").hide(500);
-            $(".sign").show(500);
+            $("#signIn").show(500);
             $(".confirm").show(500);
         }
         $("#createName").click(function () {
@@ -108,11 +112,11 @@ $(document).ready(function () {
     // create account button to show sign up form and hide sign in form
     $("#newAccount").click(function () {
         $(".signUp").show(500);
-        $(".sign").hide(500);
+        $("#signIn").hide(500);
     })
     // Returns user to the user sign In form from create new account form
     $("#logIn").click(function () {
-        $(".sign").show(500);
+        $("#signIn").show(500);
         $(".signUp").hide(500);
     })
 })
